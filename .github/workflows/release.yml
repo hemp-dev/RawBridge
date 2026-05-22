@@ -36,7 +36,7 @@ jobs:
       - name: Check package
         run: twine check dist/*
       - name: Create GitHub Release
-        uses: softprops/action-gh-release@v2
+        uses: softprops/action-gh-release@v3
         with:
           name: RawBridge ${{ github.ref_name }} - Multi-cloud RAW to Web Assets
           body_path: docs/release-notes/v0.1.0.md
